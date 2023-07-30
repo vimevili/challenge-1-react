@@ -8,7 +8,6 @@ import toast, { Toaster } from 'react-hot-toast';
 
 const Form = () => {
   const navigate = useNavigate()
-  const [isLoading, setIsLoading] = useState<boolean>(false)
   type FormData = {
     name: string
     email: string
