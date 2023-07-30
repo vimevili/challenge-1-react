@@ -1,27 +1,41 @@
-# React + TypeScript + Vite
+<!DOCTYPE html>
+<html lang="pt-br">
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<body>
+  <h1>Challenge 1 - Landing Page with form</h1>
+  <p>Esse projeto é a refatoração do código original do primeiro desafio proposto no meu estágio na Compass UOL. A princípio o trabalho foi realizar essa página somente com HTML, CSS e JS Vanilla (https://github.com/vimevili/desafio-01), incluíndo toda a verificação lógica e visual dos inputs e o armazenamento dos dados no localStorage. Após estudar ReactJS, decidi refatorar o código, mantendo o design e funcionalidades, mas utilizando TypeScript e algumas bibliotecas para deixar o código mais limpo e organizado</p>
 
-Currently, two official plugins are available:
+  <h2>⚙️ Funcionalidades</h2>
+  <ul>
+    <li>Validação lógica e visual dos inputs com React Hot Toast e React Form Hook</li>
+    <li>O botão "Send Message" fica desabilitado enquanto todos os campos não forem preenchidos corretamente.</li>
+    <li>Ao realizar o submit, as informações do usuário são armazenadas no localStorage.</li>
+    <li>Após o envio, uma nova página é aberta com essas informações.</li>
+  </ul>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+  <h2>Projeto em funcionamento</h2>
+  
+  <img src="https://github.com/vimevili/challenge-1-react/blob/main/src/assets/challenge-1.gif" width="900" />
+  
+  <h2>Tecnologias Utilizadas</h2>
+  <ul>
+    <li>ReactJS</li>
+    <li>CSS Modules</li>
+    <li>TypeScript</li>
+    <li>React Form Hook</li>
+    <li>React Hot Toast</li>
+  </ul>
 
-## Expanding the ESLint configuration
+  <h2>Como Executar</h2>
+  <ol>
+    <li>Clone este repositório</li>
+    <li>Instale as dependências: npm install</li>
+    <li>Inicie o servidor local: npm run dev</li>
+    <li>Acesse a aplicação em http://localhost:3000</li>
+  </ol>
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+</body>
 
-- Configure the top-level `parserOptions` property like this:
+</html>
 
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+ 
