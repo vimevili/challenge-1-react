@@ -1,0 +1,41 @@
+.checkboxesContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.subtitle {
+    color: #2e0249;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+
+.checkboxItem {
+    display: none;
+} 
+  
+.label {
+    display: inline-block;
+    padding: 0.625rem 1.25rem;
+    background-color: #fff;
+    color: rgba(46, 2, 73, 0.3);
+    border: solid 0.125rem rgba(46, 2, 73, 0.3);
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+.labelChecked {
+    display: inline-block;
+    padding: 0.625rem 1.25rem;
+    background-color: #a91079;
+    color: #fff;
+    border: solid 0.125rem rgba(46, 2, 73, 0.3);
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+.error {
+    color: red;
+    font-size: 1rem;
+    padding-top: .5rem;
+}

@@ -1,0 +1,22 @@
+.mediasContainer {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: transparent;
+    transition: padding 0.3s, background-color 0.3s;
+    gap: 2.75rem;
+    align-self:baseline;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+}
+  
+.socialMedia {
+  padding: 1rem;
+}
+
+.socialMedia:hover {
+    padding: 1rem;
+    background: #a91079;
+    border-radius: 50%;
+    transition: padding 0.3s, background-color 0.3s;
+}

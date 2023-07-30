@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#root {
+  --cor-0: #ffffff;
+  --cor-1: #a91079;
+  --cor-2: #2e0249;
+  color: #fff;
+}
+
+li {
+  list-style: none;
+  color: white;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color:#fff;
+  
+}
+
