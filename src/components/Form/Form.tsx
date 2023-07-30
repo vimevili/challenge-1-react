@@ -4,10 +4,11 @@ import styles from './Form.module.css'
 import { ErrorMessage } from "@hookform/error-message";
 import {useForm} from 'react-hook-form'
 import { useNavigate } from 'react-router-dom'
+import toast, { Toaster } from 'react-hot-toast';
 
 const Form = () => {
   const navigate = useNavigate()
-
+  const [isLoading, setIsLoading] = useState<boolean>(false)
   type FormData = {
     name: string
     email: string
@@ -36,8 +37,18 @@ const Form = () => {
     }
 
     const mensagemJSON = JSON.stringify(mensagemObj);
-      localStorage.setItem("formData", mensagemJSON);
-      navigate('/user-data')  
+    localStorage.setItem("formData", mensagemJSON);
+    const loading = toast.loading('Submitting...');
+
+    setTimeout(() => {
+      toast.success('Submitted', {
+        id: loading,
+      })
+    }, 1000)
+
+    setTimeout(() => {
+      navigate('/user-data')
+    }, 2000)
   }
 
   useEffect(() => {
@@ -50,6 +61,7 @@ const Form = () => {
   return (
     <form className={styles.body} onSubmit={handleSubmit(onSubmit)}>
         <div style={{display: 'flex', flexDirection: 'column', gap: '4rem'}}>
+            <Toaster position="bottom-center"/>
             <Checkboxes 
             checkboxesSelecionados={checkboxesSelecionados} 
             setCheckboxesSelecionados={setCheckboxesSelecionados}/>

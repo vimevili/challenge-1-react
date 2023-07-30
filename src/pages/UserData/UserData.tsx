@@ -7,7 +7,7 @@ const UserData = () => {
     const {name, email, message, interests} = data
   return (
     <div className={styles.body}>
-      <h1 className={styles.title}>Informações do Formulário</h1>
+      <h1 className={styles.title}>Form Data</h1>
         <div className={styles.dataContainer}>
           {data ? <>
                 <p>Name: <span>{name.replace(/"/g, "")}</span></p>
